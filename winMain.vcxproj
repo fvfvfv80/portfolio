@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{37432F70-3FEF-4249-A47A-2207A0BC3D26}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>winMain</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\admin\Desktop\portfolio\winMain\GameFramework2D\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="commonMacroFunction.h" />
+    <ClInclude Include="cRobotGame.h" />
+    <ClInclude Include="GameFramework2D\include\animation.h" />
+    <ClInclude Include="GameFramework2D\include\bullets.h" />
+    <ClInclude Include="GameFramework2D\include\button.h" />
+    <ClInclude Include="GameFramework2D\include\effect.h" />
+    <ClInclude Include="GameFramework2D\include\effectManager.h" />
+    <ClInclude Include="GameFramework2D\include\gameNode.h" />
+    <ClInclude Include="GameFramework2D\include\image.h" />
+    <ClInclude Include="GameFramework2D\include\imageManager.h" />
+    <ClInclude Include="GameFramework2D\include\keyManager.h" />
+    <ClInclude Include="GameFramework2D\include\loading.h" />
+    <ClInclude Include="GameFramework2D\include\progressBar.h" />
+    <ClInclude Include="GameFramework2D\include\sceneManager.h" />
+    <ClInclude Include="GameFramework2D\include\singletonBase.h" />
+    <ClInclude Include="GameFramework2D\include\timeManager.h" />
+    <ClInclude Include="GameFramework2D\include\timer.h" />
+    <ClInclude Include="GameFramework2D\include\txtData.h" />
+    <ClInclude Include="GameFramework2D\include\utils.h" />
+    <ClInclude Include="AliceIntro.h" />
+    <ClInclude Include="intro.h" />
+    <ClInclude Include="loadingScene.h" />
+    <ClInclude Include="mainGame.h" />
+    <ClInclude Include="P_Engin.h" />
+    <ClInclude Include="randomFunction.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="world.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cRobotGame.cpp" />
+    <ClCompile Include="GameFramework2D\animation.cpp" />
+    <ClCompile Include="GameFramework2D\bullets.cpp" />
+    <ClCompile Include="GameFramework2D\button.cpp" />
+    <ClCompile Include="GameFramework2D\effect.cpp" />
+    <ClCompile Include="GameFramework2D\effectManager.cpp" />
+    <ClCompile Include="GameFramework2D\gameNode.cpp" />
+    <ClCompile Include="GameFramework2D\image.cpp" />
+    <ClCompile Include="GameFramework2D\imageManager.cpp" />
+    <ClCompile Include="GameFramework2D\keyManager.cpp" />
+    <ClCompile Include="GameFramework2D\loading.cpp" />
+    <ClCompile Include="GameFramework2D\progressBar.cpp" />
+    <ClCompile Include="GameFramework2D\sceneManager.cpp" />
+    <ClCompile Include="GameFramework2D\timeManager.cpp" />
+    <ClCompile Include="GameFramework2D\timer.cpp" />
+    <ClCompile Include="GameFramework2D\txtData.cpp" />
+    <ClCompile Include="GameFramework2D\utils.cpp" />
+    <ClCompile Include="AliceIntro.cpp" />
+    <ClCompile Include="intro.cpp" />
+    <ClCompile Include="loadingScene.cpp" />
+    <ClCompile Include="mainGame.cpp" />
+    <ClCompile Include="P_Engin.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="winMain.cpp" />
+    <ClCompile Include="world.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

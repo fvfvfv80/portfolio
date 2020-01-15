@@ -1,0 +1,8 @@
+﻿  winMain.cpp
+d:\github\portfolio\world.h(15): warning C4005: 'PI': 매크로 재정의
+  c:\users\admin\desktop\portfolio\winmain\gameframework2d\include\utils.h(8): note: 'PI'의 이전 정의를 참조하십시오.
+d:\github\portfolio\p_engin.h(5): warning C4005: 'GRAVITY': 매크로 재정의
+  d:\github\portfolio\world.h(14): note: 'GRAVITY'의 이전 정의를 참조하십시오.
+d:\github\portfolio\p_engin.h(6): warning C4005: 'PI': 매크로 재정의
+  d:\github\portfolio\world.h(15): note: 'PI'의 이전 정의를 참조하십시오.
+  winMain.vcxproj -> D:\GitHub\portfolio\Debug\winMain.exe
